@@ -11,6 +11,7 @@ int main(void)
 	int matriz[4][4];
 	ListaDuplaEstado *lista = NULL;
 
+
 	preencheMatriz(matriz);
 	/*
 	pra testar casos especificos:
