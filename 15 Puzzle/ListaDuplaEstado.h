@@ -17,9 +17,9 @@ int removePos(ListaDuplaEstado **lista, int posicao);
 
 /*funcoes avancadas*/
 int indexOf(ListaDuplaEstado *lista, int mat[4][4]);
-int removeEstado(ListaDuplaEstado **lista, int mat[4][4]);
+int removeMatrizDaLista(ListaDuplaEstado **lista, int mat[4][4]);
 int addPos(ListaDuplaEstado **lista, int mat[4][4], int posicao);
 
-int comparaMatrizes(int mat[4][4], ListaDuplaEstado *lista);
+int SeMatrizContidaNaListaRetornaZero(int mat[4][4], ListaDuplaEstado *lista);
 
 int getPos(int mat[4][4], ListaDuplaEstado *lista, int posicao);

@@ -155,7 +155,7 @@ int indexOf(ListaDuplaEstado *lista, int mat[4][4])
 	int pos = -1, cont = 0;
 	while (lista != NULL && pos == -1)
 	{
-		if (comparaMatrizes(mat, lista) == 0);
+		if (SeMatrizContidaNaListaRetornaZero(mat, lista) == 0);
 			pos = cont;
 
 		lista = lista->proximo;
@@ -172,7 +172,7 @@ int indexOf(ListaDuplaEstado *lista, int mat[4][4])
  * @param posicao Valor a ser excluído
  * @return Sucesso da operação
  */
-int removeEstado(ListaDuplaEstado **lista, int mat[4][4])
+int removeMatrizDaLista(ListaDuplaEstado **lista, int mat[4][4])
 {
 	return removePos(&(*lista), indexOf(*lista, mat));
 }
@@ -235,7 +235,7 @@ int addPos(ListaDuplaEstado **lista, int matriz[4][4], int posicao)
 }
 
 /*retorna 0 se a matriz eh contida na lista ou -1 se nao*/
-int comparaMatrizes(int mat[4][4], ListaDuplaEstado *lista)
+int SeMatrizContidaNaListaRetornaZero(int mat[4][4], ListaDuplaEstado *lista)
 {
 	if (lista == NULL)
 		return -1;

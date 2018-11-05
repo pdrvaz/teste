@@ -30,6 +30,9 @@
     <ClCompile Include="Solver.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ListaInt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Jogo.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Solver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaInt.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

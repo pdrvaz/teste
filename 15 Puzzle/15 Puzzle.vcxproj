@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClCompile Include="Jogo.c" />
     <ClCompile Include="ListaDuplaEstado.c" />
+    <ClCompile Include="ListaInt.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="Movimentos.c" />
     <ClCompile Include="Solver.c" />
@@ -124,6 +125,7 @@
   <ItemGroup>
     <ClInclude Include="Jogo.h" />
     <ClInclude Include="ListaDuplaEstado.h" />
+    <ClInclude Include="ListaInt.h" />
     <ClInclude Include="Movimentos.h" />
     <ClInclude Include="Solver.h" />
   </ItemGroup>

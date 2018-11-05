@@ -90,7 +90,7 @@ void ImprimeJogo(int mat[4][4])
 	return;
 }
 
-int Move(int mat[4][4], int dir)
+int MovePecaNaMatriz(int mat[4][4], int dir)
 {
 	switch (dir)
 	{
@@ -104,4 +104,13 @@ int Move(int mat[4][4], int dir)
 		return MoveLeft(mat);
 	}
 	return -1;
+}
+
+void DesfazMovePecaNaMatriz(int mat[4][4], int dir)
+{
+
+	if (dir % 2 == 0)
+		MovePecaNaMatriz(mat, dir + 1);
+	else
+		MovePecaNaMatriz(mat, dir - 1);
 }
